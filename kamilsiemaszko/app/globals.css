@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {  
+  --color-accent: #E20019;  
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+  @apply bg-black border-15 border-[#9B898B]
+}
+
+.sticky-header-container {
+  @apply z-50 sticky right-0 top-0 w-full;
+}
+
+.sticky-header-absolute-container {
+  @apply absolute right-0 top-0 flex flex-col items-end w-full;
+}
+
+.sticky-header-content {
+  @apply lg:px-10 p-5 bg-black/90 sticky w-full top-0 z-50 flex;
+}
+
+.hero-container {
+  @apply bg-[url(/images/splash.png)] bg-cover bg-center flex-row h-screen
+}
+
+.hero-text-container {
+  @apply flex items-center justify-center h-full
+}
+
+.hero-text-main {
+  @apply p-5 text-white flex flex-col text-center text-5xl lg:text-7xl font-extrabold
+}
+
+.hero-text-secondary {
+  @apply text-white font-extrabold  z-[2] text-5xl lg:text-7xl absolute
+}
+
+.contact-section {
+  @apply lg:w-1/2 mx-auto flex w-full mt-5 border-3 border-accent rounded-lg p-3 text-white font-bold text-center text-sm
+}
+
+.faq-container {
+  @apply mx-auto flex px-5 mt-3 border-3 border-accent rounded-lg p-3 text-white font-bold text-center text-sm cursor-pointer
+}
+
+.link {
+  @apply cursor-pointer hover:text-accent hover:underline
+}
+
