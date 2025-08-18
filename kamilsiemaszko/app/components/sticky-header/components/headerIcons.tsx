@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const HeaderIcons = () => {
     return (
-        <div className="flex justify-center lg:ml-2 my-auto">
+        <div className="flex justify-center lg:ml-2 mt-0.5 h-full">
             <a href="https://www.facebook.com/kamilxsiemaszko/?locale=pl_PL" target="_blank">
                 <Image
                     src="/icons/facebook.svg"

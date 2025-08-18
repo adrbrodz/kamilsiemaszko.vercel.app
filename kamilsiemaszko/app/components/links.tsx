@@ -14,7 +14,7 @@ const Links = ({setShowLinks}: any) => {
         <p 
           key={index} 
           className="link"
-          onClick={() => {scrollToWithOffset(link.toLowerCase(), false); setShowLinks(false)}}
+          onClick={() => {scrollToWithOffset(link.toLowerCase()); setShowLinks(false)}}
           >
           {link}
         </p>

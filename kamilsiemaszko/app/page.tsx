@@ -22,6 +22,11 @@ export default function Home() {
       <TrustindexWidget />
       <Contact />
       <FAQ />
+      <p className="italic text-xs text-right text-white p-5 px-10">
+        <a  href="https://adrbrodz.github.io" target="_blank">
+          by: Adrian Brodziński
+        </a>
+      </p>
     </div>
   );
 }
