@@ -121,7 +121,8 @@ const FAQ = () => {
                 width={500}
                 height={500}
                 className="mx-auto px-5 mt-10 w-auto h-auto"
-            />
+                priority 
+                />
         </div>
     )
 }

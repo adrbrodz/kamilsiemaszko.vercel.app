@@ -9,6 +9,7 @@ const SecondSection = () => {
                 width={500}
                 height={500}
                 className="mx-auto w-auto h-auto"
+                priority 
             />
             <p>
                 <br />

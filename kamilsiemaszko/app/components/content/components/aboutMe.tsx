@@ -12,6 +12,7 @@ const AboutMe = () => {
                 width={500}
                 height={500}
                 className="mx-auto lg:mr-10  w-auto h-auto"
+                priority 
             />
             <br />
             <p>
