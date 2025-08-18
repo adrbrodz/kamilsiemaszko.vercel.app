@@ -5,11 +5,11 @@ import { useState } from "react";
 
 const Contact = () => {
 
-    const [numer, setNumer] = useState("Pokaż numer!");
-    const [mail, setMail] = useState("Pokaż email!");
+    const [numer, setNumer] = useState("Pokaż numer");
+    const [mail, setMail] = useState("Pokaż email");
 
     const contactSections = {
-        person: "Kamil Siemaszko - trener personalny",
+        person: "Kamil Siemaszko — trener Muay Thai",
         phone: numer,
         email: mail
     }
@@ -43,7 +43,12 @@ const Contact = () => {
     return (
         <div className="flex-row text-white sm:px-20 lg:px-100 px-5 lg:mt-10">
             <p className="font-bold">KONTAKT</p>
-            <a href="https://czerwony-smok.pl/home-centrum/" target="_blank">
+           
+            {ContactSection("person", contactSections.person)}
+            {ContactSection("phone", contactSections.phone)}
+            {ContactSection("email", contactSections.email)}
+        
+         <a href="https://czerwony-smok.pl/home-centrum/" target="_blank">
                 <Image
                     src="/images/czerwonysmok.png"
                     alt="czerwonysmok"
@@ -52,9 +57,6 @@ const Contact = () => {
                     className="mx-auto w-auto h-auto mt-5 mb-5"
                 />
             </a>
-            {ContactSection("person", contactSections.person)}
-            {ContactSection("phone", contactSections.phone)}
-            {ContactSection("email", contactSections.email)}
         </div>
     )
 }

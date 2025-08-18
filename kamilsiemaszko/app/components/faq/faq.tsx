@@ -69,7 +69,7 @@ const FAQ = () => {
         </p>,
         <p>
             Do wyboru są dwie w pełni wyposażone sale treningowe w Poznaniu, ale trening można zaaranżować
-            nawet w twoim mieszkaniu, a gdy jest ciepło - w parku.
+            nawet w twoim mieszkaniu, a gdy jest ciepło — w parku.
         </p>,
         <p>
             Treningi prowadzę od rana do wieczora, przez 7 dni w tygodniu. Napisz do mnie, na pewno znajdziemy
@@ -96,7 +96,7 @@ const FAQ = () => {
 
     return (
         <div id="faq" className="flex-row text-white sm:px-20 lg:px-100 p-5 mt-5">
-            <p className="font-bold mb-5">FAQ - CZĘSTE PYTANIA</p>
+            <p className="font-bold mb-5">FAQ — CZĘSTE PYTANIA</p>
             {
                 getQuestions().map((question: string, index: number) => (
                     <div key={index} className="mt-2">
