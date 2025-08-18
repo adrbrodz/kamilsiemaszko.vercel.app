@@ -29,11 +29,11 @@
 }
 
 .hero-text-main {
-  @apply p-5 text-white flex flex-col text-center text-5xl lg:text-7xl font-extrabold
+  @apply p-5 text-white flex flex-col text-center text-4xl sm:text-5xl lg:text-7xl font-extrabold
 }
 
 .hero-text-secondary {
-  @apply text-white font-extrabold  z-[2] text-5xl lg:text-7xl absolute
+  @apply text-white font-extrabold  z-[2] text-4xl sm:text-5xl lg:text-7xl absolute
 }
 
 .contact-section {
