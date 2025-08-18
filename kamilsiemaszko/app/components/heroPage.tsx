@@ -6,15 +6,14 @@ const HeroPage = () => {
             <span>
                 WALCZ JAK
             </span>
-            <br />
             <span className="text-accent z-[3]">
                 CHAMPION
             </span>
           </div>
-          <span className="hero-text-secondary mt-[6rem] lg:mt-[8.8rem] opacity-50">
+          <span className="hero-text-secondary mt-27 lg:mt-35 opacity-50">
             CHAMPION
           </span>
-          <span className="hero-text-secondary mt-[9rem] lg:mt-[12.8rem] opacity-25">
+          <span className="hero-text-secondary mt-42 lg:mt-50 opacity-25">
             CHAMPION
           </span>
         </div>
