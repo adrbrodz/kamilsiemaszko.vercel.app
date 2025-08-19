@@ -9,7 +9,7 @@ const Contact = () => {
     const [mail, setMail] = useState("Pokaż email");
 
     const contactSections = {
-        person: "Kamil Siemaszko — trener Muay Thai",
+        person: "Kamil Siemaszko trener Muay Thai",
         phone: numer,
         email: mail
     }
@@ -17,6 +17,7 @@ const Contact = () => {
     const ContactSection = (icon: string, text: string) => {
         return (
             <div className="flex" id="kontakt">
+                
                 <div className={`contact-section ${icon != "person" ? "cursor-pointer" : ""}`}
                     onClick={() => {
                         if (icon === "phone") {
@@ -43,12 +44,12 @@ const Contact = () => {
     return (
         <div className="flex-row text-white sm:px-20 lg:px-100 px-5 lg:mt-10">
             <p className="font-bold">KONTAKT</p>
-           
+
             {ContactSection("person", contactSections.person)}
             {ContactSection("phone", contactSections.phone)}
             {ContactSection("email", contactSections.email)}
-        
-         <a href="https://czerwony-smok.pl/home-centrum/" target="_blank">
+
+            <a href="https://czerwony-smok.pl/home-centrum/" target="_blank">
                 <Image
                     src="/images/czerwonysmok.png"
                     alt="czerwonysmok"

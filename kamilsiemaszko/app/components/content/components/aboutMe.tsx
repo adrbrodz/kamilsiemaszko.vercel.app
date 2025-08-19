@@ -38,7 +38,7 @@ const AboutMe = () => {
                 Reprezentuję{" "}
                 <span className="font-bold ">czołowy</span> polski klub
                 sportów walki — <span className="font-bold ">Czerwony Smok w Poznaniu</span>{" "}
-                - na co dzień mogąc rozwijać swoje umiejętności wśród zawodników i
+                — na co dzień mogąc rozwijać swoje umiejętności wśród zawodników i
                 trenerów <span className="font-bold ">światowej klasy</span>.
                 Dzięki temu środowisku wiem, że mój warsztat jest na{" "}
                 <span className="font-bold ">najwyższym poziomie</span>
