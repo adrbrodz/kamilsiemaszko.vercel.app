@@ -6,7 +6,7 @@
 
 
 .main-container {
-  @apply bg-black border-15 border-[#9B898B]
+  @apply bg-black 
 }
 
 .sticky-header-container {
@@ -22,16 +22,13 @@
 }
 
 .hero-container {
-  @apply bg-[url(/images/splash.png)] bg-cover bg-center flex-row h-screen
+  @apply flex-row  bg-no-repeat bg-center;
 }
-
+ 
 .hero-text-container {
-  @apply flex items-center justify-center h-full
+  @apply flex   h-full
 }
 
-.hero-text-main {
-  @apply p-5 text-white flex flex-col text-center text-5xl lg:text-7xl font-extrabold
-}
 
 .hero-text-secondary {
   @apply text-white font-extrabold  z-[2] text-5xl lg:text-7xl absolute
