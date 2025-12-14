@@ -5,6 +5,8 @@ import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 import scrollToWithOffset from "@/app/functions/scrollToWithOffset";
 import Image from "next/image";
+import { ElfsightWidget } from "react-elfsight-widget";
+
 
 const bebas = Bebas_Neue({
     subsets: ["latin"],
@@ -334,7 +336,13 @@ const Content = () => {
 
                 </div>
             </div>
-            <div className="bg-[#fff34a] px-10 mt-15 lg:mt-45 w-full lg:px-75 xl:px-55 md:px-20 py-9 xl:text-xl flex-row">
+            <div className="mt-20 px-10 md:px-30">
+                  {
+<ElfsightWidget widgetId="6da72076-585c-4b1e-963d-a332ac6ed0a7"/>
+      } 
+            </div>
+               
+            <div className="bg-[#fff34a] px-10 mt-15 lg:mt-20 w-full lg:px-75 xl:px-55 md:px-20 py-9 xl:text-xl flex-row">
 
                 <div className={`${bebas.className} text-4xl`} >
                     KONTAKT

@@ -4,7 +4,6 @@ import HeroPage from "./components/heroPage";
 import Content from "./components/content/content";
 import Contact from "./components/contact/contact";
 import FAQ from "./components/faq/faq";
-import { ElfsightWidget } from "react-elfsight-widget";
 import { Bebas_Neue, Montserrat } from "next/font/google";
 
 
@@ -23,9 +22,7 @@ export default function Home() {
       
       <HeroPage />
       <Content />
-      {
-//<ElfsightWidget widgetId="6da72076-585c-4b1e-963d-a332ac6ed0a7"/>
-      } 
+ 
 
       <div className="italic text-xs font-light space-y-2 text-right text-white p-5 px-10">
         <p>
