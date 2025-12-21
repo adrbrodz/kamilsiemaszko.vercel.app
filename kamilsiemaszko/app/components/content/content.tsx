@@ -14,17 +14,16 @@ const bebas = Bebas_Neue({
 });
 
 const Content = () => {
-
-    const [faqQuestionId, setFaqQuestionId] = useState<any>(1)
+    const [phoneVisible, setPhoneVisible] = useState(false);
+    const [mailVisible, setMailVisible] = useState(false);
+    const [faqQuestionId, setFaqQuestionId] = useState<any>(0)
     const [userInput, setUserInput] = useState({
         name: "",
         phone: "",
         email: "",
         message: ""
     });
-    if (process.env.NODE_ENV === "development") {
-        console.log(userInput);
-    }
+    
     const handleChange = (e: any) => {
         const { name, value } = e.target;
         setUserInput({
@@ -52,6 +51,13 @@ const Content = () => {
 
             if (res.status === 200) {
                 toast.success("Message sent successfully!");
+                setUserInput({
+                    name: "",
+                    phone: "",
+                    email: "",
+                    message: ""
+                });
+                e.target.reset();
             }
         } catch (error) {
             toast.error("Failed to send message. Please try again later.");
@@ -68,14 +74,14 @@ const Content = () => {
             </div>
             <div className="md:hidden">
                 <Image
-                    src="/images/about-mobile.png"
+                    src="/images/about-mobile2.png"
                     alt="Content Image"
                     height={10000}
                     width={10000}
                     className="w-full h-auto"
                 />
             </div>
-            <div className="bg-[url(/images/about.png)] hidden md:flex text-xs lg:text-sm lg:px-25 xl:px-55 md:px-20 sm:px-10 px-20 w-full text-white bg-contain bg-no-repeat bg-center flex">
+            <div className="bg-[url(/images/about2.png)] hidden md:flex text-xs lg:text-sm lg:px-25 xl:px-55 md:px-20 sm:px-10 px-20 w-full text-white bg-contain bg-no-repeat bg-center flex">
                 <div className="w-1/2 py-10 xl:pr-50 lg:pr-30 md:pr-2 sm:pr-25 invisible lg:visible">
                     Nazywam się Kamil Siemaszko i od dziecka jestem związany ze sportami walki. Boks tajski trenuję od 2012 roku – zdobyłem cztery złote medale Mistrzostw Polski i rywalizowałem na zawodowych ringach.
                     <br />
@@ -291,6 +297,7 @@ const Content = () => {
                                                 className={`${q.id == faqQuestionId && faqQuestionId!= 1 ? "mt-5" : ""}`}
 
                                                 onClick={() => setFaqQuestionId(q.id)}
+                                              
                                             >
                                                 <span className={`${q.id == faqQuestionId ? "cursor-pointer hover:text-[#fff34a] text-[#fff34a]" : "cursor-pointer hover:text-[#fff34a]"}`}>{q.question}</span>
                                                 {q.id == faqQuestionId ? <span><br />{q.answer}<br /></span> : ""}
@@ -355,8 +362,35 @@ const Content = () => {
                         </div>
                         <div className={`text-sm `} >
                             <p>TRENER MUAI THAI</p>
-                            <p className="mt-4">+48 791 844 061</p>
-                            <p className="mt-4">trening@kamilsiemaszko.pl</p>
+                            {
+                                phoneVisible ?
+                                    <p className="mt-4 cursor-pointer" onClick={() => setPhoneVisible(false)}>+48 791 844 061</p>
+                                    : <p className="mt-4 cursor-pointer" onClick={() => setPhoneVisible(true)}>
+                                        <Image
+                                            src="/icons/phone.svg"
+                                            alt="Phone Icon"
+                                            height={15}
+                                            width={15}
+                                            className="inline-block mr-2 mb-1"
+            
+                                        />
+                                        Pokaż numer telefonu</p>
+                            }
+                            {
+                                mailVisible ?
+                                    <p className="mt-4 cursor-pointer" onClick={() => setMailVisible(false)}>trening@kamilsiemaszko.pl</p>
+                                    : <p className="mt-4 cursor-pointer" onClick={() => setMailVisible(true)}>
+                                         <Image
+                                            src="/icons/email.svg"
+                                            alt="Phone Icon"
+                                            height={15}
+                                            width={15}
+                                            className="inline-block mr-2 mb-1"
+            
+                                        />
+                                        Pokaż mail</p>
+                            }
+                        
                         </div>
                     </div>
                     <div className="flex-row lg:w-1/2 md:w-2/3 mt-10 text-sm">
