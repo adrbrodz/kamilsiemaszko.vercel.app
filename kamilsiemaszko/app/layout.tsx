@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Kamil Siemaszko - trener Muay Thai",
-  description: "trener Muai Thai",
+  description: "trener Muay Thai",
 };
 
 export default function RootLayout({
