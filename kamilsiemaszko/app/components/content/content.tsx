@@ -361,7 +361,7 @@ const Content = () => {
                             KAMIL SIEMASZKO
                         </div>
                         <div className={`text-sm `} >
-                            <p>TRENER MUAI THAI</p>
+                            <p>TRENER MUAY THAI</p>
                             {
                                 phoneVisible ?
                                     <p className="mt-4 cursor-pointer" onClick={() => setPhoneVisible(false)}>+48 791 844 061</p>
